@@ -4,8 +4,24 @@ class User {
         this.username = username
         this.name = name
         this.bio = bio
-        this.dataCreation = new Date()
+        this.dateCreation = new Date()
         this.lastUpdate = new Date()
+    }
+
+    get getUsername() {
+        return this.username
+    }
+
+    get getBio() {
+        return this.bio
+    }
+
+    get getDateCreation() {
+        return this.dateCreation
+    }
+
+    get getLastUpdate() {
+        return this.lastUpdate
     }
 }
 
