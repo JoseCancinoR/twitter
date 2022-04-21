@@ -5,18 +5,9 @@ class UserService {
         return new User(id, username, name, "Sin bio")
     }
 
-    /* static getInfo(id, username, name) {
-        
-    } */
-
-    /* static updateUserUsername() {
-
-    } */
-
-    /* static getAllUsernames() {
-
-    } */
+    static getInfo(user) {
+        return Object.values(user)
+    }
 }
-
 
 module.exports = UserService
